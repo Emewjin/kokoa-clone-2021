@@ -1,0 +1,61 @@
+<!-- 대부분의 웹사이트는 index.html을 제일 먼저 확인한다 -->
+
+<!-- !입력후 아래에 뜨는 것을 엔터하면 자동으로 입력됨.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Milkyway</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Milkyway</h1>
+      <p class="welcome-header__text">
+        If you have a Milkyway Account, log in with your email or phone number.
+      </p>
+    </header>
+
+    <form class="login-form">
+      <div>
+        <input type="text" placeholder="Email or phone number" required />
+      </div>
+
+      <div>
+        <input type="password" placeholder="Password" required minlength="8" />
+      </div>
+
+      <div>
+        <input type="submit" value="Log In" />
+      </div>
+
+      <div>
+        <input type="submit" value="Sign Up" />
+      </div>
+      <div>
+        <a href="#">Find Milkyway Account or Password</a>
+      </div>
+    </form>
+    <script
+      src="https://kit.fontawesome.com/8ae89e08ca.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

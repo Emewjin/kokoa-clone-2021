@@ -1,0 +1,49 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.nav__ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav__a {
+  position: relative;
+}
+.nav__noti {
+  background-color: tomato;
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  /* 여기까지만 하면 span은 inline이기에 너비,높이를 가질 수 없어 적용되지 않는다.
+  그래서 display:block;을 설정했으나, 이후 중앙정렬을 위해
+  display:flex;를 추가하며 block은 삭제한다. flex안에 block이 포함되어있기 때문이다. */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  position: absolute;
+  left: 20px;
+  bottom: 14px;
+}
+/* 모든 링크는 블루값을 기본으로 가지고 잇음
+이를 초기화 또는 재설정하기 위해 reset.css에서 설정 */
+
+.ellipsis__noti {
+  background-color: tomato;
+  color: tomato;
+  display: flex;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 30px;
+}

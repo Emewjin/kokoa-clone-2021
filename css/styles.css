@@ -1,9 +1,4 @@
-/* style.css에는 
-모든 스크린에 적용될 수 있는 스타일을 기록
-ex)font-family */
-
 @import "reset.css";
-/* 브라우저에 의해 설정된 margin 값 등등을 지우고 직접 디자인하기 위함 */
 @import "variables.css";
 
 /* Screens */
@@ -23,61 +18,4 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.welcome-header {
-  margin: 90px 0px;
-  text-align: center;
-  /* <p>, <h1>과 같은 text를 다루고 있기 때문에 
-flexbox가 아닌 text-align을 쓴다. */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.welcome-header__title {
-  margin-bottom: 20px;
-  font-size: 25px;
-  font-weight: 500;
-}
-
-.welcome-header__text {
-  width: 60%;
-  color: gray;
-}
-
-.login-form {
-  display: flex;
-  flex-direction: column;
-  margin: 0px 20px;
-  border: none;
-  padding: 15px 0px;
-  /* 왜 패딩? */
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-
-.login-form__input {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  transition: border-color 0.3s ease-in-out;
-}
-
-.login-form__btn {
-  cursor: pointer;
-  border-radius: 5px;
-  align-items: center;
-}
-
-.login-form__a {
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-  font-size: 13px;
-}
-
-.login-form__input:focus {
-  border-color: var(--yellow);
-}
-
-.login-form__btn:focus {
-  background-color: var(--yellow);
-  transition: background-color ease-in-out;
 }

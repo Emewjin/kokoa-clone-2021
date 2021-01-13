@@ -44,6 +44,13 @@
   border-radius: 3px;
   justify-content: center;
   align-items: center;
+}
+.ellipsis__noti--bottom {
   position: absolute;
   left: 30px;
+}
+.ellipsis__noti--top {
+  position: relative;
+  left: 73px;
+  bottom: 25px;
 }

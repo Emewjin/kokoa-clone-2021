@@ -1,0 +1,19 @@
+.plus-thing {
+  border-top: var(--border-style);
+  border-bottom: var(--border-style);
+  padding: 25px 0px;
+  margin: 25px 0px;
+  font-weight: 500;
+  color: var(--gray-color);
+}
+
+.plus-thing h6 {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.plus-thing__text {
+  display: block;
+  text-align: center;
+  margin: 110px 0px;
+  font-size: 20px;
+}

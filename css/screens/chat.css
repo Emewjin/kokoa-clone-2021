@@ -1,0 +1,157 @@
+#chat-screen {
+  background-color: #abc1d1;
+  height: 1000vh;
+}
+
+#chat-screen .sub-header,
+#chat-screen .status-bar {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #abc1d1;
+}
+#chat-screen .sub-header {
+  z-index: 2;
+}
+#chat-screen .status-bar {
+  z-index: 3;
+}
+.main-chat {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.chat__timestamp {
+  padding: 10px 15px;
+  /* height와 width으로 배경을 주는게 아니라 padding으로 준다 */
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.message-row img {
+  width: 60px;
+  height: 60px;
+  border-radius: 22px;
+  margin-right: 10px;
+}
+
+.message__author {
+  opacity: 0.9;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+  /* span요소여서 margin을 줄 수가 없으니 block처리한다 */
+}
+
+.message__text {
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-weight: 400;
+  font-size: 20px;
+  border-top-left-radius: 0;
+}
+
+.message__contents {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__time {
+  opacity: 0.9;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.message-row--me {
+  justify-content: flex-end;
+}
+
+.message-row--me .message__text {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.message-row--me .message__contents {
+  flex-direction: row-reverse;
+}
+
+.reply {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 25px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:last-child {
+  width: 90%;
+}
+.reply input {
+  padding: 12px;
+  width: 100%;
+  border-radius: 20px;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.reply__column {
+  position: relative;
+}
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: -25px;
+  top: 2px;
+}
+.reply__column:last-child > i {
+  right: 30px;
+  top: 12px;
+}
+.reply__column button {
+  background-color: var(--yellow);
+  border-radius: 50%;
+  border: none;
+  width: 38px;
+  height: 38px;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+
+.reply i {
+  opacity: 0.5;
+}
+.reply__column button i {
+  opacity: 1;
+}
+
+input::placeholder {
+  font-size: 15px;
+  padding: 0px 10px;
+}

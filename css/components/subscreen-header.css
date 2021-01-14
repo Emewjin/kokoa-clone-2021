@@ -12,9 +12,30 @@
   font-weight: 600;
 }
 
+/* 상단바를 세 섹션으로 나누고 가운데는 딱 가운데에 고정시키는 방법.
+absolute를 쓰는 것은 css에서는 wierd한 방법이라 33%로 나누고 이렇게 함 */
+
+.sub-header__column {
+  width: 33%;
+}
 .sub-header__column:first-child {
   margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
 }
+
+.sub-header__column:nth-child(2) {
+  text-align: center;
+}
+
 .sub-header__column:last-child {
   margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
 }
+
+.sub-header__column span:last-child {
+  margin-left: 20px;
+}
+
+/* 여기까지가 그 방법 */

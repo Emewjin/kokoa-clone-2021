@@ -15,6 +15,7 @@
 
 .user-component {
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .user-component,
@@ -32,6 +33,21 @@
   margin-top: 8px;
   font-size: 17px;
   color: var(--gray-color);
+  display: flex;
+}
+
+.user-component__message div {
+  width: 15px;
+  height: 15px;
+  border: solid tomato 2px;
+  border-radius: 50%;
+  color: tomato;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .user-component__avatar--lg {

@@ -1,0 +1,30 @@
+.more-screen {
+  margin-top: 35px;
+}
+
+.more-suggestions__icons {
+  margin-top: 35px;
+  display: flex;
+  padding: 0px 20px;
+}
+
+.more-suggestions__icon {
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.more-suggestions__icon-image {
+  width: 60px;
+  height: 60px;
+  background-color: var(--yellow);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 10px;
+}

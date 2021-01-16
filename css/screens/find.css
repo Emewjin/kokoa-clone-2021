@@ -111,6 +111,24 @@
   font-size: 12px;
 }
 
+.open-post__column:hover i {
+  will-change: transform;
+  animation: heartBeats 1s linear infinite;
+}
+@keyframes heartBeats {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(2);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
 .heart-box span {
   margin-left: 5px;
 }

@@ -8,18 +8,23 @@
 }
 
 .screen-header__title {
-  font-size: 28px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 700;
+  background: linear-gradient(45deg, var(--strong), white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .screen-header__icons span {
   margin-left: 25px;
 }
 
-.screen-header__icons .fa-search:hover,
-.screen-header__icons .fa-music:hover,
-.screen-header__icons .fa-cog:hover,
-.screen-header__icons .fa-comment-medical:hover {
-  transform: scale(1.2);
+.screen-header__icons i {
+  color: white;
   transition: transform 0.3s ease-in-out;
+}
+
+.screen-header__icons i:hover {
+  transform: scale(1.2);
+  color: var(--strong);
 }

@@ -1,5 +1,6 @@
 .user-component {
   display: flex;
+  color: white;
 }
 
 .user-component__column {
@@ -25,14 +26,13 @@
 }
 
 .user-component__name {
-  font-weight: 600;
   font-size: 22px;
+  color: var(--strong);
 }
 
 .user-component__message {
   margin-top: 8px;
   font-size: 17px;
-  color: var(--gray-color);
   display: flex;
 }
 
@@ -48,6 +48,12 @@
   align-items: center;
   font-size: 12px;
   font-weight: 500;
+}
+
+.user-component__avatar--lg,
+.user-component__avatar--sm,
+.user-component__avatar {
+  border: inset 2px var(--strong);
 }
 
 .user-component__avatar--lg {
@@ -67,7 +73,6 @@
 }
 
 .user-component__column:last-child {
-  color: var(--gray-color);
   display: flex;
   flex-direction: column;
   align-items: flex-end;

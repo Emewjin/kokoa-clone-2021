@@ -1,19 +1,38 @@
 .plus-thing {
   border-top: var(--border-style);
   border-bottom: var(--border-style);
-  padding: 25px 0px;
-  margin: 25px 0px;
+  padding: 20px 0px;
+  margin: 20px 0px;
   font-weight: 500;
-  color: var(--gray-color);
 }
 
 .plus-thing h6 {
-  font-size: 18px;
-  color: rgba(0, 0, 0, 0.8);
+  font-size: 25px;
+  color: var(--strong);
 }
+
 .plus-thing__text {
   display: block;
   text-align: center;
   margin: 110px 0px;
   font-size: 20px;
+  color: var(--gray);
+}
+
+.plus-thing__text:hover {
+  will-change: transform;
+  animation: Beats 1s linear infinite;
+}
+
+@keyframes Beats {
+  0% {
+    transform: none;
+  }
+  50% {
+    color: var(--strong);
+    transform: scale(1.1);
+  }
+  100% {
+    transform: none;
+  }
 }

@@ -7,17 +7,27 @@
   margin-top: 20px;
 }
 
+.sub-header i {
+  color: white;
+}
+
+.sub-header i:hover,
+.sub-header i:active {
+  color: var(--strong);
+}
+
 .sub-header__title {
   font-size: 25px;
   font-weight: 600;
+  background: linear-gradient(45deg, var(--strong), white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-/* 상단바를 세 섹션으로 나누고 가운데는 딱 가운데에 고정시키는 방법.
-absolute를 쓰는 것은 css에서는 wierd한 방법이라 33%로 나누고 이렇게 함 */
 
 .sub-header__column {
   width: 33%;
 }
+
 .sub-header__column:first-child {
   margin-right: auto;
   display: flex;
@@ -37,5 +47,3 @@ absolute를 쓰는 것은 css에서는 wierd한 방법이라 33%로 나누고 �
 .sub-header__column span:last-child {
   margin-left: 20px;
 }
-
-/* 여기까지가 그 방법 */

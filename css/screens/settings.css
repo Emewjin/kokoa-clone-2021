@@ -1,19 +1,25 @@
 .settings-setting {
-  padding: 20px 0px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 10px;
+  border-bottom: 1px solid white;
   font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.settings-setting:hover,
+.settings-setting:active {
+  background-color: var(--strong-opacity);
+  box-shadow: var(--box-shadow);
+  border-radius: 15px;
+  color: var(--strong);
+}
 .settings-setting i {
   margin-right: 20px;
   font-size: 22px;
   opacity: 0.9;
 }
-
 .settings-setting__column:last-child {
-  opacity: 0.5;
+  color: var(--strong);
   font-size: 17px;
 }

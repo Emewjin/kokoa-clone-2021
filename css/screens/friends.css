@@ -29,7 +29,6 @@
 
 #splash-screen {
   background-image: url("https://us.123rf.com/450wm/ikonstudio/ikonstudio1502/ikonstudio150200002/36570595-realistic-seamless-vector-image-of-the-night-sky-with-stars-and-galaxies-.jpg?ver=6");
-  background-repeat: no-repeat;
   background-color: black;
   /* 배경에 로컬이미지 적용법 */
   z-index: 2;

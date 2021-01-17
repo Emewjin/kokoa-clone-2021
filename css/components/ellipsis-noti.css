@@ -1,0 +1,21 @@
+.ellipsis__noti {
+  background-color: tomato;
+  color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ellipsis__noti--bottom {
+  position: absolute;
+  left: 30px;
+}
+
+.ellipsis__noti--top {
+  position: absolute;
+  right: 20px;
+  top: 45px;
+}

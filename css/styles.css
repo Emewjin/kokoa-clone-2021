@@ -5,6 +5,9 @@
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
 
 /* Components */
 @import "components/status-bar.css";
@@ -12,14 +15,142 @@
 @import "components/screen-header.css";
 @import "components/user-component.css";
 @import "components/badge.css";
+@import "components/icon-raw.css";
+@import "components/plus-thing.css";
+@import "components/subscreen-header.css";
+@import "components/ellipsis-noti.css";
+@import "components/no-mobile.css";
+
+@font-face {
+  font-family: "DungGeunMo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
-  height: 1000vh;
-  color: #2e363e;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -ms-overflow-style: none;
+  height: 150vh;
+  background: linear-gradient(#090a0f, #1b2735);
+  color: white;
+  font-family: DungGeunMo;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .main-screen {
   padding: 0px var(--horizontal-space);
+  color: white;
+}
+
+.chat-list-hover {
+  transition: transform ease-in-out;
+  margin-bottom: 30px;
+}
+
+.chat-list-hover:hover {
+  transform: scale(1.1);
+  border-radius: 15px;
+  background-color: var(--strong-opacity);
+  box-shadow: var(--box-shadow);
+}
+
+#shooting-star {
+  background: none;
+  background-image: url("shootingstar/star.png"), url("shootingstar/star2.png"),
+    url("shootingstar/star3.png");
+  height: 150vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+  -webkit-animation: shooting-star 25s linear infinite;
+  -moz-animation: shooting-star 25s linear infinite;
+  -ms-animation: shooting-star 25s linear infinite;
+  animation: shooting-star 25s linear infinite;
+}
+
+@keyframes shooting-star {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+}
+@-moz-keyframes shooting-star {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+}
+@-webkit-keyframes shooting-star {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+}
+@-ms-keyframes shooting-star {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 500px 500px, 100px 200px, -100px 150px;
+  }
+}
+
+#star {
+  background: none;
+  background-image: url("shootingstar/star2.png"), url("shootingstar/star3.png");
+  height: 150vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+  -webkit-animation: star 50s linear infinite;
+  -moz-animation: star 50s linear infinite;
+  -ms-animation: star 50s linear infinite;
+  animation: star 50s linear infinite;
+}
+
+@keyframes star {
+  0% {
+    background-position: 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 100px 200px, -100px 150px;
+  }
+}
+@-moz-keyframes star {
+  0% {
+    background-position: 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 100px 200px, -100px 150px;
+  }
+}
+@-webkit-keyframes star {
+  0% {
+    background-position: 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 100px 200px, -100px 150px;
+  }
+}
+@-ms-keyframes star {
+  0% {
+    background-position: 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 100px 200px, -100px 150px;
+  }
 }

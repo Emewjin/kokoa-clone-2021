@@ -1,14 +1,12 @@
 #friends-display-link {
   text-align: center;
   display: block;
-  background-color: #f9f9f9;
+  background: var(--nav-gr);
   padding: 15px 0px;
   font-size: 18px;
-  color: var(--gray-color);
-}
-
-#friends-display-link i {
-  color: rgba(0, 0, 0, 0.2);
+  color: white;
+  margin-bottom: 20px;
+  margin-top: -10px;
 }
 
 .friends-screen {
@@ -25,21 +23,40 @@
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
-  color: var(--gray-color);
+  color: var(--strong);
+  font-size: 25px;
 }
 
 #splash-screen {
-  background-color: var(--yellow);
+  background-image: url("/css/starry-night.jpg");
+  background-repeat: no-repeat;
+  /* 배경에 로컬이미지 적용법 */
+  z-index: 2;
+  background-size: cover;
   position: absolute;
   top: 0;
   height: 100vh;
   width: 100vw;
   display: flex;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  font-size: 200px;
   animation: hideSplashScreen 0.4s ease-in-out forwards;
-  animation-delay: 1.2s;
+  animation-delay: 1.5s;
+  /* 애니메이션이 끝나면 처음 상태로 돌아간다. 기본값으로! 
+  이를 해결하기 위한게 forwards !! 애니메이션의 마지막 상태(마지막 keframe)를 계속 유지하게 함
+  그러나 스플래쉬 스크린이 없어지지 않고 계속 존재하기 때문에 
+  그 밑의 요소들은 클릭이 불가능함
+  이를 해결하기 위해 visibility hidden 추가. 마우스에 걸리지 않게 숨기는 것.
+  그러나 여전히 요소는 존재함.*/
+}
+
+#splash-screen span {
+  font-size: 90px;
+  padding: 20px;
+  background: linear-gradient(180deg, var(--strong), white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes hideSplashScreen {
@@ -49,4 +66,30 @@
     opacity: 0;
     visibility: hidden;
   }
+}
+
+.musicbox {
+  border-top: var(--border-style);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.musicbox-title span:first-child {
+  color: var(--strong);
+  font-size: 25px;
+}
+
+.music-title {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.music {
+  margin-top: 20px;
+  display: block;
+  width: 100%;
 }

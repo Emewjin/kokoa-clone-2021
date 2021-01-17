@@ -28,7 +28,7 @@
 }
 
 #splash-screen {
-  background-image: url("/css/starrynight.jpg");
+  background-image: url("starrynight.jpg");
   background-repeat: no-repeat;
   /* 배경에 로컬이미지 적용법 */
   z-index: 2;

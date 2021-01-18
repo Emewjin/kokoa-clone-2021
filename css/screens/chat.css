@@ -55,6 +55,9 @@
   align-items: center;
   margin-bottom: 25px;
 }
+.message-row__plus {
+  padding-left: 75px;
+}
 
 .message-row img {
   border: solid 2px var(--strong);
@@ -65,8 +68,8 @@
 }
 
 .message__author {
-  opacity: 0.9;
-  font-size: 15px;
+  color: var(--strong);
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 5px;
   display: block;
@@ -93,6 +96,12 @@
 .message__time {
   margin-left: 10px;
   font-size: 12px;
+}
+
+.message__count {
+  margin-left: 10px;
+  font-size: 12px;
+  color: yellow;
 }
 
 /* 내가 보낸 메세지 */

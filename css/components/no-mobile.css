@@ -16,7 +16,7 @@
 #no-mobile span:first-child {
   font-size: 35px;
 }
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 565px) {
   #no-mobile {
     display: none;
   }

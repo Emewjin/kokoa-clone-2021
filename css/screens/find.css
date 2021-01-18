@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
+  border-top: var(--border-style);
+  padding: 20px 0px;
 }
 
 .open-chat__header h6 {

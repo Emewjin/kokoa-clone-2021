@@ -1,12 +1,20 @@
 .user-component {
   display: flex;
+  justify-content: center;
   color: white;
+  padding: 5px 2px;
 }
 
 .user-component__column {
   display: flex;
 }
 
+.user-component:hover {
+  background-color: var(--strong-opacity);
+  box-shadow: var(--box-shadow);
+  border-radius: 15px;
+  color: var(--strong);
+}
 .user-component__avatar {
   width: 70px;
   height: 70px;

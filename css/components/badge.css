@@ -8,3 +8,16 @@
   justify-content: center;
   align-items: center;
 }
+
+.message-badge {
+  animation: badgeRotate 1.2s ease infinite;
+}
+
+@keyframes badgeRotate {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}

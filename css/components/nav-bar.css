@@ -16,6 +16,10 @@
   animation: navBtnAnimation 0.3s ease-in-out forwards;
 }
 
+.nav__li-current {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
 .nav__li:nth-child(2) {
   animation-delay: 0.3s;
 }

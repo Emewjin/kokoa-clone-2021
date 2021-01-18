@@ -1,3 +1,6 @@
+.open-chat {
+  margin-bottom: 20px;
+}
 .open-chat__header {
   display: flex;
   justify-content: space-between;

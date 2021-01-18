@@ -75,7 +75,6 @@
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin-top: 20px;
   padding-top: 20px;
 }
 
@@ -93,4 +92,8 @@
   margin-top: 20px;
   display: block;
   width: 100%;
+}
+
+.official_acount {
+  color: yellow;
 }

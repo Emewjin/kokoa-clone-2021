@@ -31,7 +31,7 @@
 
 body {
   -ms-overflow-style: none;
-  height: 150vh;
+  height: 180vh;
   background: linear-gradient(#090a0f, #1b2735);
   color: white;
   font-family: DungGeunMo;
@@ -62,7 +62,7 @@ body {
   background: none;
   background-image: url("shootingstar/star.png"), url("shootingstar/star2.png"),
     url("shootingstar/star3.png");
-  height: 150vh;
+  height: 180vh;
   left: 0;
   position: absolute;
   top: 0;
@@ -110,7 +110,7 @@ body {
 #star {
   background: none;
   background-image: url("shootingstar/star2.png"), url("shootingstar/star3.png");
-  height: 150vh;
+  height: 180vh;
   left: 0;
   position: absolute;
   top: 0;
